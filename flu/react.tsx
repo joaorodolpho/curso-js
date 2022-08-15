@@ -5,5 +5,5 @@ function CapsLock(props){
     return <div>{textoEmCapsLock}</div>
 }
 function pagina() {
-return <CapsLock texto="cu"/>
+return <CapsLock texto="textoem caps lock"/>
 }

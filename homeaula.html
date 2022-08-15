@@ -34,13 +34,24 @@
          </nav>
                                 <a href="aula.html" target="_blank">
                     <img class="c1img" src="jjj/1img.png" alt="A importância da água">
+                    
                                 </a>
                 </main>
                          <footer>
                     Site criado por João Rodolpho,12:36
                          </footer>
 
-
+<script src="https://unpkg.com/react@16.7.0/umd/react.production.min.js">
+import React from 'React';
+function CapsLock(props){
+    const textoInserido = props.texto;
+    const textoEmCapsLock = textoInserido.toUpperCase();
+    return <div>{textoEmCapsLock}</div>
+}
+function pagina() {
+return <CapsLock texto="textoem caps lock"/>
+}
+</script>
     
 </body>
 </html>

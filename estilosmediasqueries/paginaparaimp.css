@@ -1,0 +1,62 @@
+@charset "UTF-8"
+
+
+body{
+    background-color:  rgb(7, 210, 246);
+  }
+  
+  header#ititulo{
+    text-align: center;
+    background-color: rgb(132, 0, 255);
+    font-size:20px;
+    margin:0px 0px 0px 0px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .c1img{
+   width: 300px;
+   display:inline-block;
+   border-radius:10px;
+   margin: 0px;
+   padding:0px;
+   display: inline-block;
+  }
+  .c1img:hover{
+    box-shadow: 4px  4px rgb(9, 255, 0);
+  }
+  
+  
+  nav{
+    margin:0px 0px 20px 0px;
+    font-size: 19px;
+    background-color:rgb(7, 210 246);
+    width: 350px;
+    border-radius: 15px;
+  }
+  .cbb{
+   background-color: rgb(51, 224, 255);
+   border-radius: 10px;
+   width: 320px;
+   margin: auto;
+   }
+   .cbb:hover{
+    box-shadow: 4px 4px  rgb(9, 255, 0);
+   }
+   a{
+    width: 320px;
+    height: 168,66;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+   }
+  
+  footer{
+    background-color: rgb(76, 76, 221);
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 1400px;
+    display: inline-block;
+    height: 20px;
+  }
+  
