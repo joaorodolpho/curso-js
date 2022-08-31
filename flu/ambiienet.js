@@ -12,11 +12,9 @@ return comerPizza();
 
 
 
-
 */
 console.log('Vai começar...')
-for (var c = 1;c <= 5;c++) { 
+for (var c = 1;c <= 900;c++) { 
 console.log(c)
 }
 console.log('Fim!')
-

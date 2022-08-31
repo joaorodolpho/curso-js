@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjinhos Baby</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="produtos">
+
+    </div>
+
+    <div id="carrinho">
+
+        <script>
+            const items = [
+    {
+        id: 0,
+        nome: 'camiseta',
+        img: 'body-do-bebe-naruto.jpg',
+        quantidade: 0
+
+    },
+    {
+        id: 1,
+        nome: 'short',
+        img: 'download (2).jpg',
+        quantidade: 0
+
+    }, 
+    {
+        id: 2,
+        nome: 'sapato',
+        img: 'download (3).jpg',
+        quantidade: 0
+
+    },
+]
+
+ 
+
+inicializarLoja = () => {
+    var containerProduto = document.getElementById('produtos');
+    items.map((val)=> {
+        containerProduto.innerHTML += `
+
+        <div class="produto-single">
+
+            <img src = "`+val.img+`"/>
+            <p>`+val.nome+`</p>
+            <a key="`+val.id+`" href = "">Adicionar ao carrinho </a>
+
+            </div>
+
+
+        
+        `;
+    })
+}
+
+
+inicializarLoja();
+
+
+        </script>
+    </div>
+
+</body>
+</html>

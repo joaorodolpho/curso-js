@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+img {
+    max-width: 350px;
+    min-width: 220px;
+    max-height: 300px;
+    min-height: 160px;
+}
+body {
+    background-color: aqua;
+}

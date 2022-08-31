@@ -1,43 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora do João.</title>
     <style>
+        *{
+        margin: 0%;
+        padding: 0%;
+        }
         body {
             font: normal 20pt Arial;
-            background-image:  linear-gradient(to top,red,yellow);
+            background-color: rgb(92, 93, 95);
         }
         input {
             font: normal 20pt Arial;
-            width: 100px;
+            width: 250px;
             color: black;
+            border-radius: 10px;
         }
-        div#res {
+        #resa , #resm , #resd{
             margin-top: 20px;
+            width: 130px;
+            border-radius: 10px;
         }
         
     </style>
 </head>
 <body>
+    <div>
    
-   <input type="number" name="txtn1" id="txtn1"> + 
-   <input type="number" name="txtn2" id="txtn2">
-   <input type="button" value="somar" onclick="somar()">
-   <div id = "res">Resultado:</div>
+   <input type="number" name="numa1" id="numa1" placeholder="Digite um número..">
+    
+   </div>
+   <div>
+   <input type="number" name="numa2" id="numa2" placeholder="Digite outro número">
+   <input type="button" value="+" onclick="somar()">
+   <div id = "resa">Resultado:</div>
+   <input type="number" name="numm1" id="numm1" placeholder="Digite um número..">
+    
+   </div>
+   <div>
+   <input type="number" name="numm2" id="numm2" placeholder="Digite outro número">
+   <input type="button" value="x" onclick="multiplicar()">
+   <div id = "resm">Resultado:</div>
+   <input type="number" name="numd1" id="numd1" placeholder="Digite um número..">
+    
+   </div>
+    <div>
+   <input type="number" name="numd1" id="numd2" placeholder="Digite outro número">
+   <input type="button" value="÷" onclick="dividir()">
+   <div id = "resd">Resultado:</div>
+   <input type="number" name="nume1" id="nume1" placeholder="Digite um número..">
+    
+    </div>
+<input type="number" name="nume2" id="nume2" placeholder="Digite outro número">
+<input type="button" value="exponenciar" onclick="exponenciar()">
+<div id = "rese">Resultado:</div>
    <script>
-function somar() {
-var tn1 = window.document.getElementById('txtn1')
-var tn2 = window.document.getElementById('txtn2')
-var res = window.document.getElementById('res')
-var n1 = Number(tn1.value)
-var n2 = Number(tn2.value)
+somar = () => {
+var numa1 = window.document.getElementById('numa1')
+var numa2 = window.document.getElementById('numa2')
+var resa = window.document.getElementById('resa')
+var n1 = Number(numa1.value)
+var n2 = Number(numa2.value)
 var s = n1 + n2 
-res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+resa.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
 }
 console.log('Curioso ne?')
+ multiplicar = () =>  {
+    var numm1 = window.document.getElementById('numm1')
+    var numm2 = window.document.getElementById('numm2')
+    var resm = window.document.getElementById('resm')
+    var nn1 = Number(numm1.value)
+    var nn2 = Number(numm2.value)
+    var m =  nn1 * nn2
+    resm.innerHTML = ` A multiplicação entre ${nn1} e ${nn2} é igual a <strong>${m}</strong>`
+}
+dividir = () => {
+    var numd1 = window.document.getElementById('numd1')
+    var numd2 = window.document.getElementById('numd2')
+    var resd = window.document.getElementById('resd')
+    var nnn1 = Number(numd1.value)
+    var nnn2 = Number(numd2.value)
+    var d = nnn1 / nnn2;
+    resd.innerHTML = ` A divisão entre ${nnn1} e ${nnn2} é igual a <strong>${d}</strong`
+}
+exponenciar = () => {
+    var nume1 = window.document.getElementById('nume1')
+    var nume2 = window.document.getElementById('nume2')
+    var rese = window.document.getElementById('rese')
+    var nnnn1 = Number(nume1.value)
+    var nnnn2 = Number(nume2.value)
+    var e = nnnn1 ** nnnn2;
+    if(nnnn2 == 2){
+        rese.innerHTML = `${nnnn1} elevado ao quadrado é igual a ${e}  `
+    }
+    else{
+    rese.innerHTML = ` A exponeciação de ${nnnn1} elevado a ${nnnn2} é igual a <strong>${e}</strong>`
+}}
    </script>
 </body>
 </html>
