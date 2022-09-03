@@ -1,0 +1,19 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    }
+    body {
+        font: normal 20pt Arial;
+        background-color: rgb(92, 93, 95);
+    }
+    input {
+        font: normal 20pt Arial;
+        width: 250px;
+        color: black;
+        border-radius: 10px;
+    }
+    #resa , #resm , #resd{
+        margin-top: 20px;
+        width: 130px;
+        border-radius: 10px;
+    }
