@@ -6,14 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anjinhos Baby</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+
+        #produtos,#carrinho {
+           
+            
+
+        }
+        
+        body {
+            background-image: linear-gradient(to top,rgb(166, 9, 9),blue);
+        }
+
+    </style>
 </head>
 <body>
     <div id="produtos">
-
+        <h2>Vitrine</h2>
     </div>
-
+ 
     <div id="carrinho">
-
+        <h2>Carrinho:</h2>
         <script>
             const items = [
     {
@@ -39,7 +52,6 @@
     },
 ]
 
- 
 
 inicializarLoja = () => {
     var containerProduto = document.getElementById('produtos');
@@ -64,6 +76,39 @@ inicializarLoja = () => {
 inicializarLoja();
 
 
+
+
+
+    atualizarCarrinho = () => {
+          var containerCarrinho = document.getElementById('carrinho');
+    items.map((val)=> {
+        if(val.quantidade > 0){
+
+        
+        containerCarrinho.innerHTML += `
+
+
+        <p>'+val.nome+' | quantidade: '+val.quantidade+'</p>;
+        <hr>
+        
+        `;
+        }
+    })
+}
+
+
+    var links= document.getElementsByTagName('a');
+
+        for(var i = 0 ; i  < links.length ; i++ ){
+            links[i].addEventListener("click",function() {
+
+                let key = this.getAttribute('key');
+                items[key].quantidade++;
+                atualizarCarrinho();
+                return false;
+            }
+            )
+        }
         </script>
     </div>
 
