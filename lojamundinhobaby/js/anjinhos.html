@@ -6,47 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anjinhos Baby</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <style>
-
-        #produtos,#carrinho {
-           
+        * {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #produtos {
+           max-width: 900;
+           margin:0 auto;
+           padding:0 2%;
+           display: flex;
             
 
         }
         
-        body {
-            background-image: linear-gradient(to top,rgb(166, 9, 9),blue);
+        #carrinho {
+           max-width: 900;
+           margin:0 auto;
+           padding:0 2%;
+           display: block;
+            
+
         }
+        .produto-single {
+           width: 32%;
+           margin-right: 1%;
+           border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .produto-single img {
+
+            max-width: 100%;
+        }
+
+        h2 {
+            background-color: #4c3282;
+            padding: 10px 0 ;
+            text-align: center;
+            color: white;
+        }
+       
 
     </style>
 </head>
 <body>
+    <h2>Vitrine</h2>
     <div id="produtos">
-        <h2>Vitrine</h2>
+        
     </div>
- 
+    <h2>Carrinho</h2>
     <div id="carrinho">
-        <h2>Carrinho:</h2>
+       
         <script>
             const items = [
     {
         id: 0,
         nome: 'camiseta',
-        img: 'body-do-bebe-naruto.jpg',
+        img: 'camiseta_t_shirt_de_lorem_ipsum-r40f268a86dc7450a8b793c4c2c6ca6ff_k2gm8_736.jpg',
         quantidade: 0
 
     },
     {
         id: 1,
         nome: 'short',
-        img: 'download (2).jpg',
+        img: 'camiseta_t_shirt_de_lorem_ipsum-r40f268a86dc7450a8b793c4c2c6ca6ff_k2gm8_736.jpg',
         quantidade: 0
 
     }, 
     {
         id: 2,
         nome: 'sapato',
-        img: 'download (3).jpg',
+        img: 'camiseta_t_shirt_de_lorem_ipsum-r40f268a86dc7450a8b793c4c2c6ca6ff_k2gm8_736.jpg',
         quantidade: 0
 
     },
@@ -62,7 +98,7 @@ inicializarLoja = () => {
 
             <img src = "`+val.img+`"/>
             <p>`+val.nome+`</p>
-            <a key="`+val.id+`" href = "">Adicionar ao carrinho </a>
+            <a key="`+val.id+`" href = "#">Adicionar ao carrinho </a>
 
             </div>
 
@@ -81,14 +117,13 @@ inicializarLoja();
 
     atualizarCarrinho = () => {
           var containerCarrinho = document.getElementById('carrinho');
+            containerCarrinho.innerHTML = "";  
     items.map((val)=> {
         if(val.quantidade > 0){
-
-        
         containerCarrinho.innerHTML += `
 
 
-        <p>'+val.nome+' | quantidade: '+val.quantidade+'</p>;
+        <p>`+val.nome+` | quantidade: `+val.quantidade+`</p>
         <hr>
         
         `;
