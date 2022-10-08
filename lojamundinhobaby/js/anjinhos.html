@@ -21,7 +21,7 @@
            margin:0 auto;
            padding:0 2%;
            display: flex;
-            
+            flex-wrap: wrap;
 
         }
         
@@ -30,29 +30,63 @@
            margin:0 auto;
            padding:0 2%;
            display: block;
-            
+           text-align: center;
 
         }
         .produto-single {
            width: 32%;
            margin-right: 1%;
            border: 1px solid #ccc;
-            margin: 20px 0;
+           margin-top: 20px;
+           margin-bottom:20px ;
         }
 
         .produto-single img {
-
             max-width: 100%;
         }
-
+        .produto-single p {
+            text-align: center;
+            font-size: 16px;
+            padding: 10px;
+        }
+        .produto-single a {
+            text-decoration: none;
+            color: white;
+            background-color: #5fb352;
+            text-align: center;
+            display: block;
+            padding: 4px 0px;
+            font-size: 18px;
+        }
         h2 {
             background-color: #4c3282;
             padding: 10px 0 ;
             text-align: center;
             color: white;
         }
-       
-
+        info-single-checkout {
+            border-bottom: 2px dotted;
+            padding: 13px 0;
+        }
+        @media screen and (max-width:768px) {
+            .produto-single {
+                width: 100%;
+                margin-right:0;
+            }
+        }
+        button-pay {
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+        button-pay  a {
+            text-decoration: none;
+            color: white;
+            background-color: #5fb352;
+            text-align: center;
+            display: block;
+            padding: 4px 0px;
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
@@ -61,27 +95,28 @@
         
     </div>
     <h2>Carrinho</h2>
+    <div class="button-pay"><a href="paginadepagsmento.html">Clique aqui para pagar</a></div>
     <div id="carrinho">
-       
+    
         <script>
             const items = [
     {
         id: 0,
-        nome: 'camiseta',
+        nome: 'Camiseta modelo 1 ',
         img: 'camiseta_t_shirt_de_lorem_ipsum-r40f268a86dc7450a8b793c4c2c6ca6ff_k2gm8_736.jpg',
         quantidade: 0
 
     },
     {
         id: 1,
-        nome: 'short',
+        nome: 'Camiseta modelo 2',
         img: 'camiseta_t_shirt_de_lorem_ipsum-r40f268a86dc7450a8b793c4c2c6ca6ff_k2gm8_736.jpg',
         quantidade: 0
 
     }, 
     {
         id: 2,
-        nome: 'sapato',
+        nome: 'Camiseta modelo 3',
         img: 'camiseta_t_shirt_de_lorem_ipsum-r40f268a86dc7450a8b793c4c2c6ca6ff_k2gm8_736.jpg',
         quantidade: 0
 
@@ -122,10 +157,13 @@ inicializarLoja();
         if(val.quantidade > 0){
         containerCarrinho.innerHTML += `
 
+        <div class = "info-single-checkout">
+            <p style = "float:left;">Produto: `+val.nome+`</p>
+            <p style = "flot:right;">Quantidade: `+val.quantidade+`</p>
+           <div style = "clear:both"></div>
+           
+        </div>
 
-        <p>`+val.nome+` | quantidade: `+val.quantidade+`</p>
-        <hr>
-        
         `;
         }
     })
