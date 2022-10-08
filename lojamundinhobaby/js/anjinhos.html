@@ -102,6 +102,7 @@
             const items = [
     {
         id: 0,
+        preço: 80,
         nome: 'Camiseta modelo 1 ',
         img: 'camiseta_t_shirt_de_lorem_ipsum-r40f268a86dc7450a8b793c4c2c6ca6ff_k2gm8_736.jpg',
         quantidade: 0
@@ -109,6 +110,7 @@
     },
     {
         id: 1,
+        preço: 80,
         nome: 'Camiseta modelo 2',
         img: 'camiseta_t_shirt_de_lorem_ipsum-r40f268a86dc7450a8b793c4c2c6ca6ff_k2gm8_736.jpg',
         quantidade: 0
@@ -116,6 +118,7 @@
     }, 
     {
         id: 2,
+        preço: 80,
         nome: 'Camiseta modelo 3',
         img: 'camiseta_t_shirt_de_lorem_ipsum-r40f268a86dc7450a8b793c4c2c6ca6ff_k2gm8_736.jpg',
         quantidade: 0
@@ -133,6 +136,7 @@ inicializarLoja = () => {
 
             <img src = "`+val.img+`"/>
             <p>`+val.nome+`</p>
+            <p>`+val.preço+`</p>
             <a key="`+val.id+`" href = "#">Adicionar ao carrinho </a>
 
             </div>
@@ -154,12 +158,13 @@ inicializarLoja();
           var containerCarrinho = document.getElementById('carrinho');
             containerCarrinho.innerHTML = "";  
     items.map((val)=> {
-        if(val.quantidade > 0){
+        if(val.quantidade > 0 && val.preço > 0){
         containerCarrinho.innerHTML += `
 
         <div class = "info-single-checkout">
             <p style = "float:left;">Produto: `+val.nome+`</p>
             <p style = "flot:right;">Quantidade: `+val.quantidade+`</p>
+            <p style = "float:center;">Preço: `+val.preço+`</p>
            <div style = "clear:both"></div>
            
         </div>
@@ -182,6 +187,18 @@ inicializarLoja();
             }
             )
         }
+        var links= document.getElementsByTagName('a');
+
+for(var i = 0 ; i  < links.length ; i++ ){
+    links[i].addEventListener("click",function() {
+
+        let key = this.getAttribute('key');
+        items[key].preço*val(quantidade);
+        atualizarCarrinho();
+        return false;
+    }
+    )
+}
         </script>
     </div>
 
