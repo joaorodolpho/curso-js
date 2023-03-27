@@ -7,6 +7,16 @@ somar = () => {
     var s = n1 + n2 
     resa.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
     }
+    subtrair = () => {
+        var Number. = window.document.getElementById('numa1')
+        var numa2 = window.document.getElementById('numa2')
+        var resa = window.document.getElementById('resa')
+        var n1 = Number(numa1.value)
+        var n2 = Number(numa2.value)
+        var s = n1 + n2 
+        resa.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+        }
+    
     console.log('Curioso ne?')
      multiplicar = () =>  {
         var numm1 = window.document.getElementById('numm1')
@@ -39,3 +49,5 @@ somar = () => {
         else{
         rese.innerHTML = ` A exponeciação de ${nnnn1} elevado a ${nnnn2} é igual a <strong>${e}</strong>`
     }}
+
+    

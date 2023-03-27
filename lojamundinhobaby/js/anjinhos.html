@@ -193,7 +193,7 @@ for(var i = 0 ; i  < links.length ; i++ ){
     links[i].addEventListener("click",function() {
 
         let key = this.getAttribute('key');
-        items[key].preço*val(quantidade);
+        items[key].preço * quantidade;
         atualizarCarrinho();
         return false;
     }
