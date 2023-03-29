@@ -84,3 +84,18 @@
     text-align: center;
   }
   
+  .buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  
+  .login-button {
+    background-color: #4285F4;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  

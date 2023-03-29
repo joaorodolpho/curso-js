@@ -68,7 +68,7 @@ body {
   
   button[type="submit"] {
     background-color: #4d4dff;
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 0.25rem;
