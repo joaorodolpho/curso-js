@@ -54,3 +54,31 @@ function onSignIn(googleUser) {
   document.getElementById("nome-usuario").textContent = nome;
   document.getElementById("email-usuario").textContent = email;
 }
+
+const form = document.getElementById('transfer-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const recipient = document.getElementById('recipient').value;
+  const amount = document.getElementById('amount').value;
+
+  fetch('/transfer', {
+    method: 'POST',
+    body: JSON.stringify({ recipient, amount }),
+    headers: { 'Content-Type': 'application/json' }
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      alert('Transferência realizada com sucesso!');
+    } else {
+      alert('Ocorreu um erro durante a transferência.');
+    }
+  })
+  .catch(error => {
+    console.error('Ocorreu um erro:', error);
+    alert('Ocorreu um erro durante a transferência.');
+  });
+});
+
