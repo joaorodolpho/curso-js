@@ -43,4 +43,23 @@ function atualizarSaldo() {
   atualizarTransacoes();
   
   document.getElementById('btn-recarregar').addEventListener('click', recarregar);
-  
+
+  <!-- Google Sign-In API -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Meta tag necessária para a API do Google -->
+<meta name="google-signin-client_id" content="model-signifier-382122.apps.googleusercontent.com">
+
+<!-- Botão de login do Google -->
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+function onSignIn(googleUser) {
+  // Recupera as informações do usuário
+  const profile = googleUser.getBasicProfile();
+  const nome = profile.getName();
+  const email = profile.getEmail();
+
+  // Coloca as informações do usuário na página
+  document.getElementById("nome-usuario").textContent = nome;
+  document.getElementById("email-usuario").textContent = email;
+}
