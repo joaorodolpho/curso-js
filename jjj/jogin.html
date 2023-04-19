@@ -119,8 +119,8 @@ return crash;
 			minGap = 50;
 			maxGap = 200;
 			gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-			myObstacles.push(new component(10, height, carrot, x, 0, "image"));
-			myObstacles.push(new component(10, x - height - gap, flowers, x, height + gap, "image"));
+			myObstacles.push(new component(10, height, carrot, x, 0, "jjj\pixel-funny-rabbit-ears-template-600w-2245995893.jpg"));
+			myObstacles.push(new component(10, x - height - gap, flowers, x, height + gap, "jjj\downloadkkk.png"));
 		}
 		for (i = 0; i < myObstacles.length; i += 1) {
 			myObstacles[i].x += -1;
@@ -166,9 +166,9 @@ return crash;
 	canvas.width = 480;
 	canvas.height = 270;
 	var carrot = new Image();
-	carrot.src = "carrot.png";
+	carrot.src = "jjj\pixel-funny-rabbit-ears-template-600w-2245995893.jpg";
 	var flowers = new Image();
-	flowers.src = "flowers.png";
+	flowers.src = "jjj\downloadkkk.png";
 
 	var myGamePiece;
 	var myObstacles = [];
@@ -273,8 +273,8 @@ return crash;
 			minGap = 50;
 			maxGap = 200;
 			gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
-			myObstacles.push(new component(10, height, flowers, x, 0, "image"));
-			myObstacles.push(new component(10, x - height - gap, flowers, x, height + gap, "image"));
+			myObstacles.push(new component(10, height, flowers, x, 0, "jjj\downloadkkk.png"));
+			myObstacles.push(new component(10, x - height - gap, flowers, x, height + gap, "jjj\downloadkkk.png"));
 		}
 		for (i = 0; i < myObstacles.length; i += 1) {
 			myObstacles[i].x += -1;
@@ -307,7 +307,7 @@ return crash;
 		myGameArea.stop();
 		myGameArea.clear();
 		myObstacles = [];
-		myGamePiece = new component(30, 30, bunny, 10, 120, "image");
+		myGamePiece = new component(30, 30, bunny, 10, 120, "jjj\depositphotos_549865742-stock-illustration-easter-egg-painted-green-decorated.jpg");
 		myScore = new component("20px", "Consolas", "black", 280, 40, "text");
 		myGameArea.start();
 	}
@@ -318,7 +318,7 @@ return crash;
 	var myScore;
 
 	function startGame() {
-		myGamePiece = new component(30, 30, bunny, 10, 120, "image");
+		myGamePiece = new component(30, 30, bunny, 10, 120, "jjj\depositphotos_549865742-stock-illustration-easter-egg-painted-green-decorated.jpg");
 		myScore = new component("20px", "Consolas", "black", 280, 40, "text");
 		myGameArea.start();
 	}
