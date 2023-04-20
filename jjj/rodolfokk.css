@@ -1,0 +1,55 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    color: #666;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  button {
+    background-color: #008CBA;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #006687;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  
+  .monster {
+    width: 250px;
+    margin: 2rem auto;
+  }
+  
+  /* Adicione outras classes de estilo, se necessário */
+  
