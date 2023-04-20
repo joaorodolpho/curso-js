@@ -137,3 +137,4 @@ function showFinalScreen() {
 
 // iniciar o jogo
 playGame();
+    }
