@@ -1,5 +1,5 @@
 body {
-    background-color: #f5f5f5;
+    background-color: #5c26c2;
     font-family: Arial, sans-serif;
     text-align: center;
   }
@@ -24,7 +24,7 @@ body {
   
   button {
     background-color: #008CBA;
-    color: #fff;
+    color: rgb(31, 10, 126);
     font-size: 1.2rem;
     padding: 0.8rem 1.5rem;
     border-radius: 10px;
