@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Notas - Aluno</title>
+    <link rel="stylesheet" type="text/css" href="rodolfinhoescolakkk.css">
+    <script src="rodolfinhoescolakkk.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Página de Notas - Aluno</h1>
+        
+        <div class="section">
+            <h2>Login</h2>
+            <input type="text" id="alunoNome" class="input-field" placeholder="Nome de usuário">
+            <input type="password" id="senha" class="input-field" placeholder="Senha">
+            <button onclick="fazerLogin()">Entrar</button>
+            
+            <div id="mensagemErro" class="mensagem-erro"></div>
+        </div>
+        
+        <div class="section" id="notasSection" style="display: none;">
+            <h2>Suas Notas</h2>
+            <div id="notas" class="notas"></div>
+        </div>
+    </div>
+</body>
+</html>
