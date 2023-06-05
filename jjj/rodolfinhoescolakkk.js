@@ -22,7 +22,7 @@ function fazerLogin() {
   function verificarCredenciais(alunoNome, senha) {
     // Verifica se as credenciais estão corretas (exemplo simplificado)
     // Aqui você pode implementar sua própria lógica de autenticação
-    return (alunoNome === "aluno" && senha === "senha");
+    return (alunoNome === "rodolfinho" && senha === "12345");
   }
   
   function obterNotas(alunoNome) {
