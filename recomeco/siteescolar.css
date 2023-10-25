@@ -1,0 +1,268 @@
+/* Estilos para o cabeçalho */
+header {
+    background-color: #FF5733;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    animation: headerFade 2s ease-in-out infinite alternate;
+}
+
+header h1 {
+    font-size: 24px;
+    animation: titleBounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes headerFade {
+    0% {
+        background-color: #FF5733;
+    }
+    100% {
+        background-color: #33FF57;
+    }
+}
+
+@keyframes titleBounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #33FF57;
+    transition: color 0.5s;
+}
+
+nav a:hover {
+    color: #FF5733;
+}
+
+/* Estilos para as seções */
+section {
+    margin: 20px;
+    background-color: #E33A3A;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    animation: sectionFade 2s ease-in-out infinite alternate;
+}
+
+@keyframes sectionFade {
+    0% {
+        background-color: #E33A3A;
+    }
+    100% {
+        background-color: #FF5733;
+    }
+}
+
+/* Estilos para o formulário de contato */
+#formulario-contato {
+    background-color: #FF5733;
+    padding: 20px;
+    border: 2px solid #33FF57;
+    border-radius: 5px;
+    animation: formScale 1s ease-in-out infinite alternate;
+}
+
+label, input, textarea {
+    display: block;
+    margin: 10px 0;
+}
+
+#enviar {
+    background-color: #33FF57;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: buttonPulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes formScale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #FF5733;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    animation: footerSlide 1s ease-in-out infinite alternate;
+}
+
+@keyframes footerSlide {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+/* Outros estilos e animações personalizados podem ser adicionados abaixo */
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #FF5733;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    animation: headerFade 2s ease-in-out infinite alternate;
+}
+
+header h1 {
+    font-size: 24px;
+    animation: titleBounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes headerFade {
+    0% {
+        background-color: #FF5733;
+    }
+    100% {
+        background-color: #33FF57;
+    }
+}
+
+@keyframes titleBounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #33FF57;
+    transition: color 0.5s;
+}
+
+nav a:hover {
+    color: #FF5733;
+}
+
+/* Estilos para as seções */
+section {
+    margin: 20px;
+    background-color: #E33A3A;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    animation: sectionFade 2s ease-in-out infinite alternate;
+}
+
+@keyframes sectionFade {
+    0% {
+        background-color: #E33A3A;
+    }
+    100% {
+        background-color: #FF5733;
+    }
+}
+
+/* Estilos para o formulário de contato */
+#formulario-contato {
+    background-color: #FF5733;
+    padding: 20px;
+    border: 2px solid #33FF57;
+    border-radius: 5px;
+    animation: formScale 1s ease-in-out infinite alternate;
+}
+
+label, input, textarea {
+    display: block;
+    margin: 10px 0;
+}
+
+#enviar {
+    background-color: #33FF57;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: buttonPulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes formScale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #FF5733;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    animation: footerSlide 1s ease-in-out infinite alternate;
+}
+
+@keyframes footerSlide {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+/* Outros estilos e animações personalizados podem ser adicionados abaixo */
+
